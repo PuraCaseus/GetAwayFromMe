@@ -6,8 +6,8 @@ public class Damageable : MonoBehaviour
 {
     public int maxHealth = 100;
     int currentHealth;
-    public GameObject effect;
-    public GameObject EnemyHurt;
+    public GameObject DeathEffect;
+    public GameObject HurtEffect;
     public Animator anim;
     
     void Start()
@@ -17,8 +17,8 @@ public class Damageable : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        //anim.SetTrigger("isHurt");
-        //Instantiate(EnemyHurt, transform.position, Quaternion.identity);
+        anim.SetTrigger("isHurt");
+        Instantiate(HurtEffect, transform.position, Quaternion.identity);
         if(currentHealth <= 0)
         {
             Die();
@@ -27,7 +27,7 @@ public class Damageable : MonoBehaviour
     void Die()
     {
         //print("oof");
-        //Instantiate(effect, transform.position, Quaternion.identity);
+        Instantiate(DeathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
   
     }
