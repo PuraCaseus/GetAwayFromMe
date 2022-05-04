@@ -27,24 +27,24 @@ public class Smack : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                Kick();
+                Attack();
                 nextKickTime = Time.time + 1f / kickRate;
             }
         }  
 
     }
 
-    void Kick(){
+    void Attack(){
 
         anim.SetTrigger("Whack");
         LlamaKick.Play();
 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(kickPoint.position, kickRange, enemyLayers);
         
-        //foreach(Collider2D enemy in hitEnemies)
+        foreach(Collider2D enemy in hitEnemies)
         {
             ///print("we hit" + enemy.name);
-            //enemy.GetComponent<Damageable>().TakeDamage(attackDamage);
+            enemy.GetComponent<Damageable>().TakeDamage(attackDamage);
         }
     }
     private void OnDrawGizmosSelected()

@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 21393907}
   - component: {fileID: 21393908}
   - component: {fileID: 21393909}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,10 +315,11 @@ GameObject:
   - component: {fileID: 65963496}
   - component: {fileID: 65963495}
   - component: {fileID: 65963494}
+  - component: {fileID: 65963499}
   - component: {fileID: 65963493}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ThePlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -333,7 +334,7 @@ Animator:
   m_GameObject: {fileID: 65963492}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8f75e667a4e0b0f478758fa7c0980230, type: 2}
+  m_Controller: {fileID: 9100000, guid: c3bcd26aaf970ad4f84251931330f70a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -414,7 +415,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!4 &65963498
 Transform:
   m_ObjectHideFlags: 0
@@ -431,6 +432,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &65963499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65963492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cee41d6ac92c84468c2dccdd5527481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 200
+  effect: {fileID: 0}
+  EnemyHurt: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!1 &436870763
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,7 +637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1042745274}
   - component: {fileID: 1042745275}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PivotPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -665,7 +682,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1156693131}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -696,9 +713,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1926283096}
   - component: {fileID: 1926283095}
-  m_Layer: 0
-  m_Name: Square (1)
-  m_TagString: Untagged
+  - component: {fileID: 1926283098}
+  - component: {fileID: 1926283097}
+  - component: {fileID: 1926283101}
+  m_Layer: 6
+  m_Name: Enemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -768,6 +788,69 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1926283097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926283094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cee41d6ac92c84468c2dccdd5527481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 40
+  effect: {fileID: 0}
+  EnemyHurt: {fileID: 0}
+  anim: {fileID: 0}
+--- !u!61 &1926283098
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926283094}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.011864662, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9762707, y: 1}
+  m_EdgeRadius: 0
+--- !u!50 &1926283101
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926283094}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 3.13
+  m_LinearDrag: 4.37
+  m_AngularDrag: 3.38
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1951481550
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,7 +861,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1951481551}
   - component: {fileID: 1951481552}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MoveArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -862,7 +945,7 @@ GameObject:
   - component: {fileID: 2054429484}
   - component: {fileID: 2054429483}
   - component: {fileID: 2054429482}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -879,7 +962,7 @@ Animator:
   m_GameObject: {fileID: 2054429481}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 08dfa45b9ebbb2245b2dcaf4dab80dfc, type: 2}
+  m_Controller: {fileID: 9100000, guid: c3bcd26aaf970ad4f84251931330f70a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
