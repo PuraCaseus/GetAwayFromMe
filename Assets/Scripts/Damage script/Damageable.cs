@@ -5,21 +5,25 @@ using UnityEngine;
 public class Damageable : MonoBehaviour
 {
     public int maxHealth = 100;
-    int currentHealth;
+    int health;
     public GameObject DeathEffect;
     public GameObject HurtEffect;
     public Animator anim;
+
+    public HealthBarBehavior Healthbar;
     
     void Start()
     {
-        currentHealth = maxHealth;
+        health = maxHealth;
+        Healthbar.SetHealth(health, maxHealth);
     }
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
+        health -= damage;
+        Healthbar.SetHealth(health, maxHealth);
         anim.SetTrigger("isHurt");
         Instantiate(HurtEffect, transform.position, Quaternion.identity);
-        if(currentHealth <= 0)
+        if(health <= 0)
         {
             Die();
         }
