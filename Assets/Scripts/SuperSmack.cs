@@ -31,9 +31,9 @@ public class SuperSmack : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Mouse1))
             {
                 
-                ManaBar.instance.UseMana(50);
                 Attack();
                 nextKickTime = Time.time + 1f / kickRate;
+                ManaBar.instance.UseMana(45);
             }
         }  
 
@@ -41,7 +41,7 @@ public class SuperSmack : MonoBehaviour {
 
     void Attack(){
 
-        if (manabar.GetComponent<ManaBar>() == true);
+        if(manabar.GetComponent<ManaBar>().currentMana>= 45)
         {
         anim.SetTrigger("BigWhack");
         BigSwing.Play();

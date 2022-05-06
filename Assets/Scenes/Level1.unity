@@ -768,7 +768,7 @@ MonoBehaviour:
   kickPoint: {fileID: 1889366804}
   kickRange: 2.84
   attackDamage: 5
-  kickRate: 5
+  kickRate: 3
   manabar: {fileID: 88486220}
   SwingEffect: {fileID: 8143621146181353244, guid: a39e2c833ac3e474295ac01eb917d1b6, type: 3}
   BigSwing: {fileID: 1889366805}
@@ -983,7 +983,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manaBar: {fileID: 1580960095}
-  maxMana: 200
+  maxMana: 150
+  currentMana: 0
   Offset: {x: 0.84, y: 1.6, z: 0}
 --- !u!1001 &133636448
 PrefabInstance:
@@ -9044,8 +9045,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -47.40683, y: 0.9964}
-  m_SizeDelta: {x: 243.5145, y: 84.0576}
+  m_AnchoredPosition: {x: -45.164886, y: 0.9964}
+  m_SizeDelta: {x: 249.1194, y: 84.0576}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &758090964
 MonoBehaviour:

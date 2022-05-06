@@ -7,8 +7,8 @@ public class ManaBar : MonoBehaviour
 {
     public Slider manaBar;
 
-    public int maxMana = 100;
-    private int currentMana;
+    public int maxMana = 300;
+    public int currentMana;
 
     public WaitForSeconds regenTick = new WaitForSeconds(0.1f);
     public Coroutine regen;
@@ -51,17 +51,17 @@ public class ManaBar : MonoBehaviour
         }
         else
         {
-            Debug.Log("Not Enough Stamina");
+            Debug.Log("Not Enough Mana!");
         }
     }
 
     private IEnumerator RegenMana()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(1);
 
         while(currentMana < maxMana)
         {
-            currentMana += maxMana / 100;
+            currentMana += maxMana / 50;
             manaBar.value = currentMana;
             yield return regenTick;
         }
