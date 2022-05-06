@@ -41,7 +41,7 @@ public class EnemyAttack : MonoBehaviour {
         foreach(Collider2D enemy in hitEnemies)
         {
             ///print("we hit" + enemy.name);
-            enemy.GetComponent<Damageable>().TakeDamage(attackDamage);
+            enemy.GetComponent<PlayerDamaged>().TakeDamage(attackDamage);
             AttackSound.Play();
         }
     }

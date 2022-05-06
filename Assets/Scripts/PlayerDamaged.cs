@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Damageable : MonoBehaviour
+public class PlayerDamaged : MonoBehaviour
 {
     public int maxHealth = 100;
     int health;
@@ -27,7 +27,7 @@ public class Damageable : MonoBehaviour
         if(health <= 0)
         {
             Die();
-            
+            SceneManager.LoadScene("GameOver");
         }
     }
     void Die()
