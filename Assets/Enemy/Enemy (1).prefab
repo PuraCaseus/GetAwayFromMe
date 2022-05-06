@@ -41,7 +41,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6d6922376135a7d4daa88afbd6032e12, type: 3}
+  m_audioClip: {fileID: 8300000, guid: df49244954bda6245a8fb90d9b2dfe3c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.64
   m_Pitch: 1
@@ -693,7 +693,6 @@ MonoBehaviour:
   attackDamage: 10
   kickRate: 2
   AttackSound: {fileID: 745191121}
-  ManHurt: {fileID: 0}
 --- !u!114 &1402236952389944061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,7 +707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 6
   DeathEffect: {fileID: 3660721893738942768, guid: dd944d3959fa848439a3a8819fa851ef, type: 3}
-  HurtEffect: {fileID: 3660721893738942768, guid: dd944d3959fa848439a3a8819fa851ef, type: 3}
+  HurtEffect: {fileID: 7914132598952281018, guid: 4d71c92a8049f1944934876dd407e623, type: 3}
   anim: {fileID: 7683871819817863136}
   Healthbar: {fileID: 1137288018884249672}
 --- !u!95 &7683871819817863136
@@ -742,13 +741,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 39bbdb9f34719474ea3fd7f3343d9b85, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.26
+  m_Volume: 0.107
   m_Pitch: 0.9
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 210
+  Priority: 102
   DopplerLevel: 0.12
   MinDistance: 3.48
   MaxDistance: 12.5

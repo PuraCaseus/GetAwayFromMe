@@ -15,7 +15,6 @@ public class EnemyAttack : MonoBehaviour {
     float nextKickTime = 0f;
 
     [SerializeField] private AudioSource AttackSound;
-    [SerializeField] private AudioSource ManHurt;
 
     void Start(){
         anim = GetComponent<Animator>();
