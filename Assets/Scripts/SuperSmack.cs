@@ -14,6 +14,8 @@ public class SuperSmack : MonoBehaviour {
     public float kickRate = 2f;
     float nextKickTime = 0f;
 
+    public GameObject SwingEffect;
+
     [SerializeField] private AudioSource BigSwing;
     [SerializeField] private AudioSource ManHurt;
 
@@ -38,6 +40,7 @@ public class SuperSmack : MonoBehaviour {
 
         anim.SetTrigger("BigWhack");
         BigSwing.Play();
+        Instantiate(SwingEffect, transform.position, Quaternion.identity);
 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(kickPoint.position, kickRange, enemyLayers);
         
