@@ -5,7 +5,7 @@ using UnityEngine;
 public class Smack : MonoBehaviour {
 
     public LayerMask enemyLayers;
-    private Animator anim;
+    public Animator anim;
     public Transform kickPoint;
 
     public float kickRange = 0.5f;

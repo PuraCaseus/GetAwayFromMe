@@ -45,7 +45,7 @@ public class EnemyAttack : MonoBehaviour {
             AttackSound.Play();
         }
     }
-    private void OnDrawGizmosSelected()
+    public void OnDrawGizmosSelected()
     {
         if (kickPoint == null)
             return;

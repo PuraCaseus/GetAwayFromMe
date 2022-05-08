@@ -537,7 +537,7 @@ GameObject:
   - component: {fileID: 7683871819817863136}
   - component: {fileID: -9053978845109450903}
   m_Layer: 6
-  m_Name: Enemy (1)
+  m_Name: Slime
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -579,7 +579,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5ae322bc7ec538d4fa7ed4cb00cf8c54, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -601,7 +601,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.7169812, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.254717, g: 0, b: 0, a: 0.7176471}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -670,9 +670,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc9f3bc06af54214498ee8d16fdbbbcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 2.5
   target: {fileID: 0}
-  minimumDistance: 0.5
+  aggroRange: 4
+  anim: {fileID: 7683871819817863136}
 --- !u!114 &3794473679412388504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -690,7 +691,7 @@ MonoBehaviour:
     m_Bits: 128
   kickPoint: {fileID: 9007741195466650878}
   kickRange: 0.73
-  attackDamage: 10
+  attackDamage: 50
   kickRate: 2
   AttackSound: {fileID: 745191121}
 --- !u!114 &1402236952389944061
@@ -705,7 +706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cee41d6ac92c84468c2dccdd5527481, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6
+  maxHealth: 100
   DeathEffect: {fileID: 3660721893738942768, guid: dd944d3959fa848439a3a8819fa851ef, type: 3}
   HurtEffect: {fileID: 7914132598952281018, guid: 4d71c92a8049f1944934876dd407e623, type: 3}
   anim: {fileID: 7683871819817863136}
