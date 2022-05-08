@@ -15069,25 +15069,9 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4618414094444084549, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4618414094444084549, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
-      propertyPath: m_Color.g
-      value: 0.22790469
-      objectReference: {fileID: 0}
-    - target: {fileID: 4618414094444084549, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
-      propertyPath: m_Color.r
-      value: 0.4811321
-      objectReference: {fileID: 0}
     - target: {fileID: 4618414094466664789, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
       propertyPath: m_Name
       value: ThePlayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 4618414094466664791, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
-      propertyPath: kickRate
-      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 4618414094466664795, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
       propertyPath: m_RootOrder
@@ -15132,10 +15116,6 @@ PrefabInstance:
     - target: {fileID: 4618414094466664795, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4618414094466664799, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
-      propertyPath: kickRate
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8258460621392878037, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
       propertyPath: m_AnchorMax.x

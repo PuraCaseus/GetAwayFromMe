@@ -928,7 +928,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 7
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.8207547, g: 0.38679245, b: 0, a: 1}
+  m_Color: {r: 0.4811321, g: 0.22790469, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1151,7 +1151,7 @@ MonoBehaviour:
   kickPoint: {fileID: 4618414093308063802}
   kickRange: 1.1
   attackDamage: 35
-  kickRate: 2
+  kickRate: 2.3
   LlamaKick: {fileID: 4618414094444084548}
   ManHurt: {fileID: 0}
 --- !u!114 &4618414094466664799
@@ -1172,7 +1172,7 @@ MonoBehaviour:
   kickPoint: {fileID: 4618414094178074533}
   kickRange: 2.84
   attackDamage: 70
-  kickRate: 3
+  kickRate: 4
   manabar: {fileID: 6375661424925238457}
   SwingEffect: {fileID: 8143621146181353244, guid: a39e2c833ac3e474295ac01eb917d1b6, type: 3}
   BigSwing: {fileID: 4618414094178074532}
