@@ -1,35 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerDamaged : MonoBehaviour
 {
-    public float maxHealth = 100;
-    public float health;
+    public float healthAmount = 300;
     public GameObject DeathEffect;
     public GameObject HurtEffect;
     public Animator anim;
 
-    public HealthBarBehavior Healthbar;
-    
-    void Start()
+    public Image HealthBar;
+
+    void update()
     {
-        health = maxHealth;
-        Healthbar.SetHealth(health, maxHealth);
+        if(healthAmount <= 0)
+        {
+          Die();
+          SceneManager.LoadScene("GameOver");
+        }
+        
     }
-    public void TakeDamage(int damage)
+    
+    
+    public void TakeDamage(float Damage)
     {
-        health -= damage;
-        Healthbar.SetHealth(health, maxHealth);
+        healthAmount -= Damage;
+        HealthBar.fillAmount = healthAmount / 300;
         anim.SetTrigger("isHurt");
         Instantiate(HurtEffect, transform.position, Quaternion.identity);
-        if(health <= 0)
-        {
-            Die();
-            SceneManager.LoadScene("GameOver");
-        }
     }
+    
     void Die()
     {
         //print("oof");
@@ -38,7 +38,14 @@ public class PlayerDamaged : MonoBehaviour
   
     }
 
+    public void Healing(float healPoints) // This is the function we call from the enemy's script to heal the player
+    {
+        // This makes it so that healing wont "over-heal" the maximum amount (100)
+        healthAmount += healPoints;
+        healthAmount = Mathf.Clamp(healthAmount, 0, 300);
 
+        HealthBar.fillAmount = healthAmount / 300;
 
-    
+    }
+  
 }
