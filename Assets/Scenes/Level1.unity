@@ -6923,15 +6923,15 @@ RectTransform:
   m_GameObject: {fileID: 378789758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.3, y: 2.79, z: 1}
+  m_LocalScale: {x: 1.71, y: 2.03, z: 1}
   m_Children: []
   m_Father: {fileID: 3642309322836730668}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 214.3, y: -230.8}
-  m_SizeDelta: {x: 195.22998, y: 142.56262}
+  m_AnchoredPosition: {x: 182.1, y: -179.7}
+  m_SizeDelta: {x: 200.5143, y: 158.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &378789760
 MonoBehaviour:
@@ -6945,11 +6945,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
-  m_RaycastTarget: 1
+  m_Material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_Color: {r: 0.9622642, g: 0.9622642, b: 0.9622642, a: 1}
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6957,7 +6957,7 @@ MonoBehaviour:
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 1
+  m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -8832,6 +8832,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hearts
       objectReference: {fileID: 0}
+    - target: {fileID: 678007904477028221, guid: c5eefe8edfb83ad44a5cc444161a363b, type: 3}
+      propertyPath: HealTarget
+      value: 
+      objectReference: {fileID: 3642309322797373328}
     - target: {fileID: 678007904477028223, guid: c5eefe8edfb83ad44a5cc444161a363b, type: 3}
       propertyPath: m_RootOrder
       value: 9
