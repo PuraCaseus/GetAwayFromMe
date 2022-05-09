@@ -437,7 +437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   target: {fileID: 0}
-  aggroRange: 4
+  aggroRange: 5
   anim: {fileID: 4891017390536604478}
 --- !u!114 &4891017390536604480
 MonoBehaviour:

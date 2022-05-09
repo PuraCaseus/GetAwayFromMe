@@ -672,7 +672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2.5
   target: {fileID: 0}
-  aggroRange: 6
+  aggroRange: 4
   anim: {fileID: 7683871819817863136}
 --- !u!114 &3794473679412388504
 MonoBehaviour:
@@ -691,7 +691,7 @@ MonoBehaviour:
     m_Bits: 128
   kickPoint: {fileID: 9007741195466650878}
   kickRange: 0.73
-  attackDamage: 50
+  attackDamage: 40
   kickRate: 2
   AttackSound: {fileID: 745191121}
 --- !u!114 &1402236952389944061
