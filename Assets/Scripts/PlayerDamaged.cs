@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDamaged : MonoBehaviour
 {
-    public int maxHealth = 100;
-    int health;
+    public float maxHealth = 100;
+    public float health;
     public GameObject DeathEffect;
     public GameObject HurtEffect;
     public Animator anim;
