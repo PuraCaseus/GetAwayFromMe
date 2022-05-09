@@ -11,7 +11,7 @@ public class PlayerDamaged : MonoBehaviour
 
     public Image HealthBar;
 
-    void update()
+    void Update()
     {
         if(healthAmount <= 0)
         {
