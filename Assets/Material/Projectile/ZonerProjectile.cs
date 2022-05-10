@@ -1,0 +1,49 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ZonerProjectile : MonoBehaviour
+{
+
+    public float speed;
+    Vector3 targetPosition;
+
+    public int attackDamage = 10;
+    public LayerMask enemyLayers;
+    public Transform kickPoint;
+    public float kickRange = 0.5f;
+    public GameObject projectile;
+    public GameObject BloodExplotion;
+
+
+
+    private void Start()
+    {
+
+        targetPosition = FindObjectOfType<PlayerDamaged>().transform.position;
+    }
+
+    private void Update()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+        if(transform.position == targetPosition){
+            Instantiate(BloodExplotion, transform.position, Quaternion.identity);
+            Destroy(projectile);
+        }
+
+
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(kickPoint.position, kickRange, enemyLayers);
+        
+        foreach(Collider2D enemy in hitEnemies)
+        {
+            ///print("we hit" + enemy.name);
+            enemy.GetComponent<PlayerDamaged>().TakeDamage(attackDamage);
+            Instantiate(BloodExplotion, transform.position, Quaternion.identity);
+            Destroy(projectile);
+        }
+
+    }
+
+
+
+}
