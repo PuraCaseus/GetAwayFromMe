@@ -672,7 +672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2.5
   target: {fileID: 0}
-  aggroRange: 4
+  aggroRange: 7
   anim: {fileID: 7683871819817863136}
 --- !u!114 &3794473679412388504
 MonoBehaviour:
@@ -740,20 +740,20 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 39bbdb9f34719474ea3fd7f3343d9b85, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 64d54c0291f39fb47b7ed30a5d7c8d5c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.107
+  m_Volume: 1
   m_Pitch: 0.9
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 102
+  Priority: 182
   DopplerLevel: 0.12
-  MinDistance: 3.48
-  MaxDistance: 12.5
+  MinDistance: 2.3
+  MaxDistance: 7.81
   Pan2D: 0
-  rolloffMode: 2
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
