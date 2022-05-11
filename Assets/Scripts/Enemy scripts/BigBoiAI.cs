@@ -20,18 +20,16 @@ public class BigBoiAI : MonoBehaviour
     void Update()
     {
       float DistToTarget = Vector2.Distance(transform.position, target.position);
-      if(Vector2.Distance(transform.position, target.position) > minimumDistance)
+      if(DistToTarget < aggroRange)
       {
-        anim.SetBool("isRunning", true);
         ChaseTarget();
+        anim.SetBool("isRunning", true);
+        anim.SetTrigger("isAttacking");
       }
       else
       {
-        anim.SetTrigger("isAttacking");
+        StopChasingTarget();
       }
-
-      
-
 
     }
 
@@ -52,12 +50,10 @@ public class BigBoiAI : MonoBehaviour
 
     void StopChasingTarget()
     {
-        float DistToTarget = Vector2.Distance(transform.position, target.position);
-        if(DistToTarget < aggroRange)
-        {
-            anim.SetBool("isRunning", false);
-         
-        }
+      if(Vector2.Distance(transform.position, target.position) > minimumDistance)
+      {
+        anim.SetBool("isRunning", false);
+      }
 
     }
 }
