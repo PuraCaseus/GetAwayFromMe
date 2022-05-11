@@ -526,7 +526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  target: {fileID: 4618414094466664795, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
+  target: {fileID: 0}
   minimumDistance: 4
   anim: {fileID: 8066589801944627951}
   projectile: {fileID: 3154019138604207110, guid: af3545f210de8e244930ef4006b423c4, type: 3}
