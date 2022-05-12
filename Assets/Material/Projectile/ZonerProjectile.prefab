@@ -150,14 +150,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9505b5ac2d76cb946bd895a1172834da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6.82
+  speed: 7
   attackDamage: 20
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128
   kickPoint: {fileID: 661225828}
-  kickRange: 0.46
-  projectile: {fileID: 3154019138604207110}
+  kickRange: 0.5
   BloodExplotion: {fileID: 4767854433009604282, guid: 10f41cc459439b2469baf5cc14f2b679, type: 3}
 --- !u!114 &2350599032796921466
 MonoBehaviour:

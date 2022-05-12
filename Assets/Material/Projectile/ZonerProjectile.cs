@@ -12,10 +12,7 @@ public class ZonerProjectile : MonoBehaviour
     public LayerMask enemyLayers;
     public Transform kickPoint;
     public float kickRange = 0.5f;
-    public GameObject projectile;
     public GameObject BloodExplotion;
-
-
 
     private void Start()
     {
@@ -25,10 +22,12 @@ public class ZonerProjectile : MonoBehaviour
 
     private void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
-        if(transform.position == targetPosition){
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+        if(transform.position == targetPosition)
+        {
+            Debug.Log("DestinationReached");
+            Destroy(gameObject);
             Instantiate(BloodExplotion, transform.position, Quaternion.identity);
-            Destroy(projectile);
         }
 
 
@@ -39,7 +38,7 @@ public class ZonerProjectile : MonoBehaviour
             ///print("we hit" + enemy.name);
             enemy.GetComponent<PlayerDamaged>().TakeDamage(attackDamage);
             Instantiate(BloodExplotion, transform.position, Quaternion.identity);
-            Destroy(projectile);
+            Destroy(gameObject);
         }
 
     }
