@@ -532,7 +532,7 @@ MonoBehaviour:
   projectile: {fileID: 3154019138604207110, guid: af3545f210de8e244930ef4006b423c4, type: 3}
   timeBetweenShots: 2
   nextShotTime: 1.88
-  aggroRange: 4
+  aggroRange: 6
 --- !u!61 &8066589801944627948
 BoxCollider2D:
   m_ObjectHideFlags: 0

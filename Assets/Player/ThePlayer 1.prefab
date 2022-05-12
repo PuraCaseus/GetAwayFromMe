@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3326447772901715449}
   - component: {fileID: 3326447772901715207}
   - component: {fileID: 3326447772901715206}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4618414093662485985}
   - component: {fileID: 4618414093662485984}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4618414093811037786}
   - component: {fileID: 4618414093811037789}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4618414094123823743}
   m_LocalRotation: {x: -0, y: -0, z: -0.05419015, w: 0.9985307}
-  m_LocalPosition: {x: 0.51020414, y: -0.20408164, z: 0}
+  m_LocalPosition: {x: 0.5102041, y: -0.20408164, z: 0}
   m_LocalScale: {x: 7.6972103, y: 8.165971, z: 7.697209}
   m_Children:
   - {fileID: 4618414094444084546}
@@ -501,7 +501,7 @@ GameObject:
   - component: {fileID: 4618414094345444805}
   - component: {fileID: 4618414094345444807}
   - component: {fileID: 4618414094345444804}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -608,7 +608,7 @@ GameObject:
   - component: {fileID: 4618414094376992251}
   - component: {fileID: 4618414094376992248}
   - component: {fileID: 6375661424925238457}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1006,6 +1006,7 @@ GameObject:
   - component: {fileID: 4618414094466664790}
   - component: {fileID: 4618414094466664791}
   - component: {fileID: 4618414094466664799}
+  - component: {fileID: 132155080590093803}
   - component: {fileID: 4618414094466664788}
   - component: {fileID: 4618414094466664797}
   - component: {fileID: 1456415162}
@@ -1151,6 +1152,21 @@ MonoBehaviour:
   SwingEffect: {fileID: 8143621146181353244, guid: a39e2c833ac3e474295ac01eb917d1b6, type: 3}
   BigSwing: {fileID: 4618414094178074532}
   ManHurt: {fileID: 0}
+--- !u!114 &132155080590093803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4618414094466664789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e0b6253db1a3b45b1dc6a24881f6f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 4618414094466664788}
+  kickRate: 3
+  manabar: {fileID: 6375661424925238457}
 --- !u!95 &4618414094466664788
 Animator:
   serializedVersion: 3
@@ -1284,7 +1300,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4618414094715549396}
   - component: {fileID: 4618414094715549399}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1300,7 +1316,7 @@ Transform:
   m_GameObject: {fileID: 4618414094715549397}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.039, y: 0.021, z: 0}
-  m_LocalScale: {x: 3.8358486, y: 3.8358486, z: 3.8358486}
+  m_LocalScale: {x: 3.835849, y: 3.8358486, z: 3.835849}
   m_Children: []
   m_Father: {fileID: 4618414094466664795}
   m_RootOrder: 1
@@ -1366,7 +1382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4618414094753115306}
   - component: {fileID: 4618414094753115309}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Leg1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1448,7 +1464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4618414095225914859}
   - component: {fileID: 4618414095225914858}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1531,7 +1547,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4618414095295695246}
   - component: {fileID: 4618414095295695345}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Leg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1661,7 +1677,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6375661424033258667}
   - component: {fileID: 6375661424033258666}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Mana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1751,7 +1767,7 @@ GameObject:
   - component: {fileID: 8258460621392878037}
   - component: {fileID: 8258460621392878027}
   - component: {fileID: 8258460621392878026}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1824,7 +1840,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8258460622820609272}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1862,7 +1878,7 @@ GameObject:
   - component: {fileID: 8258460622842630665}
   - component: {fileID: 8258460622842630671}
   - component: {fileID: 8258460622842630670}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
