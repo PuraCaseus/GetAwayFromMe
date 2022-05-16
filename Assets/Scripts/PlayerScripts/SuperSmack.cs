@@ -34,7 +34,7 @@ public class SuperSmack : MonoBehaviour {
                 
                 Attack();
                 nextKickTime = Time.time + 1f / kickRate;
-                GetComponent<PlayerDamaged>().UseLucid(33f);
+                ManaBar.instance.UseMana(45);
             }
         }  
 
@@ -42,7 +42,7 @@ public class SuperSmack : MonoBehaviour {
 
     void Attack(){
 
-        if(player.GetComponent<PlayerDamaged>().lucidAmount>= 34)
+        if(manabar.GetComponent<ManaBar>().currentMana>= 45)
         {
         anim.SetTrigger("BigWhack");
         BigSwing.Play();
