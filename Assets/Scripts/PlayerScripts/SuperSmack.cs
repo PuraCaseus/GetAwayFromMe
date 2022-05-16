@@ -15,6 +15,7 @@ public class SuperSmack : MonoBehaviour {
     float nextKickTime = 0f;
 
     public ManaBar manabar;
+    public PlayerDamaged player;
     public GameObject SwingEffect;
 
     [SerializeField] private AudioSource BigSwing;
@@ -33,7 +34,7 @@ public class SuperSmack : MonoBehaviour {
                 
                 Attack();
                 nextKickTime = Time.time + 1f / kickRate;
-                ManaBar.instance.UseMana(45);
+                GetComponent<PlayerDamaged>().UseLucid(33f);
             }
         }  
 
@@ -41,7 +42,7 @@ public class SuperSmack : MonoBehaviour {
 
     void Attack(){
 
-        if(manabar.GetComponent<ManaBar>().currentMana>= 45)
+        if(player.GetComponent<PlayerDamaged>().lucidAmount>= 34)
         {
         anim.SetTrigger("BigWhack");
         BigSwing.Play();

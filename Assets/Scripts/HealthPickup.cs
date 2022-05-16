@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
     GameObject Player; // finds the gameobject "Player"
     CapsuleCollider2D myCollider; // Uses the BoxCollider2D on the object
-    public PlayerDamaged HealTarget; // a private 
+    public PlayerDamaged HealTarget;
     public GameObject effect;
 
     public float healing;
