@@ -27,19 +27,10 @@ using UnityEngine.UI;
 
         if (collision.gameObject.tag == "Player") // makes the colliding game object call the function "TakeDamage" from the "Health" script
         {
-            //anim.SetTrigger("Hurt");
             GameObject Player = collision.gameObject;
-            HealTarget.Healing(healing); // Healing will heal 40 to the player
+            HealTarget.Healing(healing);
             Destroy(gameObject);
             Instantiate(effect, transform.position, Quaternion.identity);
-            // A bunch of prints to make sure we see what works and what doesn't, was used in troubleshooting
-
-            //print("playergamobject" + Player);
-
-            //print("PlayerComponent.health" + Player.GetComponent<Health>());
-
-            //print("collided with player");
-            //print("playergamobject" + Player);
         }
     }
 }

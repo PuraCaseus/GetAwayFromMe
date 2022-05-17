@@ -5,13 +5,11 @@ using UnityEngine.UI;
 public class PlayerDamaged : MonoBehaviour
 {
     public float healthAmount = 300;
-    public float lucidAmount = 100;
     public GameObject DeathEffect;
     public GameObject HurtEffect;
     public Animator anim;
 
     public Image HealthBar;
-    public Image LucidBar;
 
     void Update()
     {
@@ -47,28 +45,6 @@ public class PlayerDamaged : MonoBehaviour
         healthAmount = Mathf.Clamp(healthAmount, 0, 300);
 
         HealthBar.fillAmount = healthAmount / 300;
-
-    }
-
-        
-         
-        public void UseLucid(float Lucid)
-    {
-        lucidAmount -= Lucid;
-        LucidBar.fillAmount = lucidAmount / 100; 
-        {
-            Debug.Log("Not Enough Lucid!");
-        }
-    }
-        
-        
-        public void LucidGain(float lucidPoints) // This is the function we call from the enemy's script to heal the player
-    {
-        // This makes it so that healing wont "over-heal" the maximum amount (100)
-        lucidAmount += lucidPoints;
-        lucidAmount = Mathf.Clamp(lucidAmount, 0, 100);
-
-        LucidBar.fillAmount = lucidAmount / 100;
 
     }
   
