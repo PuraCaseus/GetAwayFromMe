@@ -134,5 +134,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e9d14bd9277edf47998dd42dca3de3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  lifeTime: 2
+  speed: 15
+  lifeTime: 0.6
+  attackDamage: 25
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  kickPoint: {fileID: 7103502467100832972}
+  kickRange: 0.4
+  BloodExplotion: {fileID: 2730432014955373445, guid: 444f0c6cb4064924ba0cf0d55af164f8, type: 3}
+  destroyEffect: {fileID: 2730432014955373445, guid: 444f0c6cb4064924ba0cf0d55af164f8, type: 3}

@@ -21,23 +21,23 @@ public class PotThrow : MonoBehaviour
         float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);
         
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.V))
         { 
-            Instantiate(kruka, shootPoint.position, transform.rotation);
+            Yeet();
             nextShotTime = Time.time + 1f / shootRate;
-            LucidBar.instance.UseLucid(1);
+            LucidBar.instance.UseLucid(33);
         }
         
  
     }
 
-        //void Yeet(){
+        void Yeet(){
 
-        //if(lucidbar.GetComponent<LucidBar>().currentLucid>= 1)
-        //{
-            //Instantiate(kruka, shootPoint.position, transform.rotation);
-        //}
+        if(lucidbar.GetComponent<LucidBar>().currentLucid>= 33)
+        {
+            Instantiate(kruka, shootPoint.position, transform.rotation);
+        }
 
-    //}
+    }
  
 }

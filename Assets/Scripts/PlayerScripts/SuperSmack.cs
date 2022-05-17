@@ -15,7 +15,6 @@ public class SuperSmack : MonoBehaviour {
     float nextKickTime = 0f;
 
     public ManaBar manabar;
-    public PlayerDamaged player;
     public GameObject SwingEffect;
 
     [SerializeField] private AudioSource BigSwing;

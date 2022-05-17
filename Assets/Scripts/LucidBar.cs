@@ -10,7 +10,7 @@ public class LucidBar : MonoBehaviour
     public int maxLudic = 300;
     public int currentLucid;
 
-    public WaitForSeconds regenTick = new WaitForSeconds(0.5f);
+    public WaitForSeconds regenTick = new WaitForSeconds(0.1f);
     public Coroutine regen;
 
     public static LucidBar instance;
@@ -57,7 +57,7 @@ public class LucidBar : MonoBehaviour
 
     private IEnumerator RegenLucid()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(1);
 
         while(currentLucid < maxLudic)
         {

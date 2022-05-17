@@ -19,7 +19,7 @@ using UnityEngine.UI;
     void Start()
     {
         myCollider = GetComponent<CapsuleCollider2D>();
-        GameObject ThePlayer = GameObject.Find("ThePlayer");
+        GameObject ThePlayer = GameObject.Find("ThePlayer 1");
         HealTarget = ThePlayer.gameObject.GetComponent<PlayerDamaged>();
     }
     public void OnTriggerEnter2D(Collider2D collision) // Checks if a collision occurs
