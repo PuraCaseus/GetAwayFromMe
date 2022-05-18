@@ -565,8 +565,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  target: {fileID: 4618414094466664795, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
-  aggroRange: 5
+  target: {fileID: 0}
+  aggroRange: 7
   anim: {fileID: 4891017390536604478}
 --- !u!114 &4891017390536604480
 MonoBehaviour:
@@ -585,7 +585,7 @@ MonoBehaviour:
     m_Bits: 128
   kickPoint: {fileID: 4891017391325936289}
   kickRange: 0.9
-  attackDamage: 10
+  attackDamage: 15
   kickRate: 3
   AttackSound: {fileID: 4891017391606217049}
 --- !u!114 &4891017390536604487
@@ -600,7 +600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cee41d6ac92c84468c2dccdd5527481, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 60
+  maxHealth: 80
   DeathEffect: {fileID: 3660721893738942768, guid: dd944d3959fa848439a3a8819fa851ef, type: 3}
   HurtEffect: {fileID: 7914132598952281018, guid: 4d71c92a8049f1944934876dd407e623, type: 3}
   anim: {fileID: 4891017390536604478}
@@ -695,7 +695,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.19444445
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

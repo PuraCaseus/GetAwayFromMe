@@ -150,8 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9505b5ac2d76cb946bd895a1172834da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
-  attackDamage: 20
+  speed: 10
+  attackDamage: 30
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128

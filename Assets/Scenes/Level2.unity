@@ -4389,10 +4389,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 59607368}
     m_Modifications:
-    - target: {fileID: 1532389179, guid: e070c108c84e94a44a0a6c5b6e44b315, type: 3}
-      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4891017390536604477, guid: e070c108c84e94a44a0a6c5b6e44b315, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -4441,10 +4437,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 4825785274088810829}
-    - target: {fileID: 4891017390536604483, guid: e070c108c84e94a44a0a6c5b6e44b315, type: 3}
-      propertyPath: aggroRange
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 4891017390536604486, guid: e070c108c84e94a44a0a6c5b6e44b315, type: 3}
       propertyPath: m_Name
       value: Rat
@@ -70264,10 +70256,6 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1402236952389944058, guid: ebfc276f63aec8f42b3379939bbad862, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1402236952389944058, guid: ebfc276f63aec8f42b3379939bbad862, type: 3}
       propertyPath: m_LocalPosition.x
       value: 37.61
       objectReference: {fileID: 0}
@@ -70307,25 +70295,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1402236952389944059, guid: ebfc276f63aec8f42b3379939bbad862, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1402236952389944059, guid: ebfc276f63aec8f42b3379939bbad862, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1402236952389944059, guid: ebfc276f63aec8f42b3379939bbad862, type: 3}
-      propertyPath: m_Color.r
-      value: 0.254717
-      objectReference: {fileID: 0}
     - target: {fileID: 1402236952389944063, guid: ebfc276f63aec8f42b3379939bbad862, type: 3}
       propertyPath: m_Name
       value: Slime (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1671575059792842599, guid: ebfc276f63aec8f42b3379939bbad862, type: 3}
-      propertyPath: speed
-      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 1671575059792842599, guid: ebfc276f63aec8f42b3379939bbad862, type: 3}
       propertyPath: target
@@ -71567,7 +71539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7276850344367183427, guid: 335cba5662eeec74db738455e8d1213f, type: 3}
       propertyPath: speed
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7276850344367183427, guid: 335cba5662eeec74db738455e8d1213f, type: 3}
       propertyPath: target
@@ -71575,7 +71547,7 @@ PrefabInstance:
       objectReference: {fileID: 4825785274088810829}
     - target: {fileID: 7276850344367183427, guid: 335cba5662eeec74db738455e8d1213f, type: 3}
       propertyPath: aggroRange
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 335cba5662eeec74db738455e8d1213f, type: 3}
