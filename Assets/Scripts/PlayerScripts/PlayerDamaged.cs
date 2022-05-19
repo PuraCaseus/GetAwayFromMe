@@ -9,6 +9,8 @@ public class PlayerDamaged : MonoBehaviour
     public GameObject HurtEffect;
     public Animator anim;
 
+    
+
     public Image HealthBar;
 
     void Update()
@@ -17,6 +19,7 @@ public class PlayerDamaged : MonoBehaviour
         {
           Die();
           SceneManager.LoadScene("GameOver");
+          
         }
         
     }

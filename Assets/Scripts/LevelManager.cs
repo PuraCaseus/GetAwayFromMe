@@ -11,13 +11,14 @@ public class LevelManager : MonoBehaviour
     public GameObject playerPrefab;
 
     [Header("Currency)")]
-    public static float currency = 0f;
+    public static int currency = 0;
     public Text currencyUI;
 
     
     void Awake()
     {
         instance = this;
+        ReadCurrency();
     }
     
     public void Respawn()
@@ -25,9 +26,27 @@ public class LevelManager : MonoBehaviour
         GameObject player = Instantiate(playerPrefab, respawnPoint.position, Quaternion.identity);
     }
 
-    public void IncreaseCurrency(float amount)
+    public void IncreaseCurrency(int amount)
     {
         currency += amount;
         currencyUI.text = "NF" + currency;
+        SaveCurrency(currency);
+    }
+
+    void SaveCurrency(int amount)
+    {
+        PlayerPrefs.SetInt("NF",amount);
+        PlayerPrefs.Save();
+
+    }
+
+    void ReadCurrency()
+    {
+        int currency = PlayerPrefs.GetInt("NF");
+        currencyUI.text = "NF" + currency;
+    }
+    void OnApplicationQuit()
+    {
+        SaveCurrency(0);
     }
 }

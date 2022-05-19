@@ -45,8 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 7987881174708426293}
-  playerPrefab: {fileID: 0}
-  currency: 0
+  playerPrefab: {fileID: 4618414094466664789, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
   currencyUI: {fileID: 7987881173846218865}
 --- !u!1001 &8778439338773297141
 PrefabInstance:
@@ -142,6 +141,14 @@ PrefabInstance:
     - target: {fileID: 1660121315807392084, guid: 2c52a1f4389b21541b1f144fa9353270, type: 3}
       propertyPath: m_Name
       value: CurrencyBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660121317137342084, guid: 2c52a1f4389b21541b1f144fa9353270, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660121317137342084, guid: 2c52a1f4389b21541b1f144fa9353270, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 279
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c52a1f4389b21541b1f144fa9353270, type: 3}
