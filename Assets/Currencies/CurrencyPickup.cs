@@ -5,12 +5,14 @@ using UnityEngine;
 public class CurrencyPickup : MonoBehaviour
 {
     public int worth = 100;
+    public GameObject pickupEffect;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         Destroy(gameObject);
+        Instantiate(pickupEffect,transform.position, Quaternion.identity);
         LevelManager.instance.IncreaseCurrency(worth);
     }
 

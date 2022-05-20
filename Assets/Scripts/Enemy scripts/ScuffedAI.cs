@@ -15,7 +15,7 @@ public class ScuffedAI : MonoBehaviour
     Vector2 movement;
     public Animator anim;
 
-    void Awake()
+    void Start()
     {
       ChaseTarget();
     }

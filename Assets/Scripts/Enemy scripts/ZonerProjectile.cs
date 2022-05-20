@@ -25,7 +25,7 @@ public class ZonerProjectile : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
         if(transform.position == targetPosition)
         {
-            Debug.Log("DestinationReached");
+            
             Destroy(gameObject);
             Instantiate(BloodExplotion, transform.position, Quaternion.identity);
         }
