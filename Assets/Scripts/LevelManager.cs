@@ -29,21 +29,21 @@ public class LevelManager : MonoBehaviour
     public void IncreaseCurrency(int amount)
     {
         currency += amount;
-        currencyUI.text = "NF" + currency;
+        currencyUI.text = "x" + currency;
         SaveCurrency(currency);
     }
 
     void SaveCurrency(int amount)
     {
-        PlayerPrefs.SetInt("NF",amount);
+        PlayerPrefs.SetInt("x",amount);
         PlayerPrefs.Save();
 
     }
 
     void ReadCurrency()
     {
-        int currency = PlayerPrefs.GetInt("NF");
-        currencyUI.text = "NF" + currency;
+        int currency = PlayerPrefs.GetInt("x");
+        currencyUI.text = "x" + currency;
     }
     void OnApplicationQuit()
     {
