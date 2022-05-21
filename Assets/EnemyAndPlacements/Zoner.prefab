@@ -689,14 +689,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e463cd9c87a8cd342a232ccac7e119b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.5
+  speed: 4
   target: {fileID: 0}
-  minimumDistance: 5
+  minimumDistance: 5.5
   anim: {fileID: 7123777578560280009}
   projectile: {fileID: 3154019138604207110, guid: af3545f210de8e244930ef4006b423c4, type: 3}
   timeBetweenShots: 3
   nextShotTime: 2
-  aggroRange: 7
+  aggroRange: 8
 --- !u!61 &7123777578560280010
 BoxCollider2D:
   m_ObjectHideFlags: 0

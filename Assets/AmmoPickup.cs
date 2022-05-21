@@ -13,7 +13,7 @@ public class AmmoPickup : MonoBehaviour
         if (collision.CompareTag("Player"))
         Destroy(gameObject);
         //Instantiate(pickupEffect,transform.position, Quaternion.identity);
-        AmmoScript.instance.IncreaseCurrency(worth);
+        AmmoScript.instance.IncreaseAmmo(worth);
     }
 
 }

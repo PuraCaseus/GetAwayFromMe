@@ -421,7 +421,7 @@ Transform:
   m_GameObject: {fileID: 9020646723400489090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.17, y: 3.81, z: 0}
-  m_LocalScale: {x: 4.0211, y: 4.0211, z: 4.0211}
+  m_LocalScale: {x: 4.4059196, y: 5.499016, z: 4.0211}
   m_Children:
   - {fileID: 3282818655727433813}
   m_Father: {fileID: 0}
@@ -491,7 +491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 50
-  DeathEffect: {fileID: 678007904477028098, guid: c5eefe8edfb83ad44a5cc444161a363b, type: 3}
+  DeathEffect: {fileID: 7385176060526377352, guid: af69bfb74345e9a4d85678f92c7299d3, type: 3}
   HurtEffect: {fileID: 7385176060526377352, guid: af69bfb74345e9a4d85678f92c7299d3, type: 3}
   anim: {fileID: 514838754885865624}
   Healthbar: {fileID: 3949773874926105584}
@@ -524,10 +524,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.005326852, y: 0.12251845}
+  m_Offset: {x: -0.0078073144, y: 0.17222515}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -538,5 +538,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.72619665, y: 0.28919852}
+  m_Size: {x: 0.7510011, y: 0.36873746}
   m_EdgeRadius: 0

@@ -132,10 +132,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0f2f47351b766f44ae2c4bec4ef3f01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 9
   target: {fileID: 0}
-  minimumDistance: 2.4
-  aggroRange: 5
+  minimumDistance: 2.2
+  aggroRange: 13
   anim: {fileID: 3682980047694011348}
 --- !u!114 &3682980047694011344
 MonoBehaviour:
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cee41d6ac92c84468c2dccdd5527481, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 300
+  maxHealth: 450
   DeathEffect: {fileID: 3660721893738942768, guid: dd944d3959fa848439a3a8819fa851ef, type: 3}
   HurtEffect: {fileID: 7914132598952281018, guid: 4d71c92a8049f1944934876dd407e623, type: 3}
   anim: {fileID: 3682980047694011348}
@@ -170,9 +170,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   kickPoint: {fileID: 3682980049526689445}
-  kickRange: 3.91
-  attackDamage: 30
-  kickRate: 2.17
+  kickRange: 4
+  attackDamage: 100
+  kickRate: 3
   AttackSound: {fileID: 3682980048410170091}
 --- !u!50 &3682980047694011350
 Rigidbody2D:

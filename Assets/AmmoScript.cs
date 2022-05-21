@@ -18,24 +18,24 @@ public class AmmoScript : MonoBehaviour
         ReadAmmo();
     }
 
-    public void IncreaseCurrency(int amount)
+    public void IncreaseAmmo(int amount)
     {
         ammo += amount;
-        ammoUI.text = "x" + ammo;
+        ammoUI.text = "A" + ammo;
         SaveAmmo(ammo);
     }
 
     void SaveAmmo(int amount)
     {
-        PlayerPrefs.SetInt("x",amount);
+        PlayerPrefs.SetInt("A",amount);
         PlayerPrefs.Save();
 
     }
 
     void ReadAmmo()
     {
-        int ammo = PlayerPrefs.GetInt("x");
-        ammoUI.text = "x" + ammo;
+        int ammo = PlayerPrefs.GetInt("A");
+        ammoUI.text = "A" + ammo;
     }
     void OnApplicationQuit()
     {
@@ -45,7 +45,7 @@ public class AmmoScript : MonoBehaviour
     public void UseAmmo(int amount)
     {
         ammo -= amount;
-        ammoUI.text = "x" + ammo;
+        ammoUI.text = "A" + ammo;
     }
 
 }
