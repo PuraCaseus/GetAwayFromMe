@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
  
 public class PotThrow : MonoBehaviour
 {
@@ -9,9 +10,10 @@ public class PotThrow : MonoBehaviour
     public float shootRate = 2f;
     float nextShotTime = 0f;
     public float offset;
-
-    public LucidBar lucidbar;
+    public Text ammoText;
     public GameObject kruka;
+
+    public AmmoScript Ammo;
  
  
     private void Update()
@@ -21,23 +23,24 @@ public class PotThrow : MonoBehaviour
         float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);
         
-        if (Input.GetKeyDown(KeyCode.V))
-        { 
+        if (Ammo.GetComponent<AmmoScript>().ammo > 0)
+          if (Input.GetKeyDown(KeyCode.V))
+          { 
             Yeet();
             nextShotTime = Time.time + 1f / shootRate;
-            LucidBar.instance.UseLucid(33);
-        }
+            AmmoScript.instance.UseAmmo(1);
+          }
         
  
     }
 
         void Yeet(){
 
-        if(lucidbar.GetComponent<LucidBar>().currentLucid>= 33)
+        if(Ammo.GetComponent<AmmoScript>().ammo >= 1)
         {
             Instantiate(kruka, shootPoint.position, transform.rotation);
         }
 
     }
- 
+
 }

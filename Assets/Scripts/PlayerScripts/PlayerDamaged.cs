@@ -8,9 +8,6 @@ public class PlayerDamaged : MonoBehaviour
     public GameObject DeathEffect;
     public GameObject HurtEffect;
     public Animator anim;
-
-    
-
     public Image HealthBar;
 
     void Update()

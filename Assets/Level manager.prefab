@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 7987881174708426293}
-  playerPrefab: {fileID: 4618414094466664789, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
+  playerPrefab: {fileID: 0}
   currencyUI: {fileID: 7987881173846218865}
 --- !u!1001 &8778439338773297141
 PrefabInstance:
