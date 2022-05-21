@@ -12342,6 +12342,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 269432579}
     m_Modifications:
+    - target: {fileID: 1532389179, guid: e070c108c84e94a44a0a6c5b6e44b315, type: 3}
+      propertyPath: m_Volume
+      value: 0.305
+      objectReference: {fileID: 0}
+    - target: {fileID: 1532389179, guid: e070c108c84e94a44a0a6c5b6e44b315, type: 3}
+      propertyPath: MaxDistance
+      value: 4.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1532389179, guid: e070c108c84e94a44a0a6c5b6e44b315, type: 3}
+      propertyPath: MinDistance
+      value: 3.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 1532389179, guid: e070c108c84e94a44a0a6c5b6e44b315, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 39bbdb9f34719474ea3fd7f3343d9b85, type: 3}
     - target: {fileID: 4891017390062239811, guid: e070c108c84e94a44a0a6c5b6e44b315, type: 3}
       propertyPath: m_Color.b
       value: 0
