@@ -873,18 +873,18 @@ Camera:
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
+  m_FocalLength: 15.8956585
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: -0.03
     y: -0.02
     width: 1.12
     height: 1.05
-  near clip plane: 0.3
+  near clip plane: 0.57
   far clip plane: 1000
-  field of view: 60
+  field of view: 74.1
   orthographic: 1
-  orthographic size: 6.06
+  orthographic size: 6.27
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -909,7 +909,7 @@ Transform:
   m_GameObject: {fileID: 205862220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.35, y: -0.36, z: -10}
-  m_LocalScale: {x: 0.99414, y: 1.14, z: 0.99414}
+  m_LocalScale: {x: 0.99414, y: 1.21, z: 0.99414}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
