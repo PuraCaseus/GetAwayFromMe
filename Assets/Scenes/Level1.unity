@@ -11448,22 +11448,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Currency 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2557180302301891908, guid: 9915682de3133ce459c8684129500d1c, type: 3}
-      propertyPath: m_Size.x
-      value: 1.3031067
-      objectReference: {fileID: 0}
-    - target: {fileID: 2557180302301891908, guid: 9915682de3133ce459c8684129500d1c, type: 3}
-      propertyPath: m_Size.y
-      value: 1.9623203
-      objectReference: {fileID: 0}
-    - target: {fileID: 2557180302301891908, guid: 9915682de3133ce459c8684129500d1c, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.07669109
-      objectReference: {fileID: 0}
-    - target: {fileID: 2557180302301891908, guid: 9915682de3133ce459c8684129500d1c, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.01277402
-      objectReference: {fileID: 0}
     - target: {fileID: 6888486513550516981, guid: 9915682de3133ce459c8684129500d1c, type: 3}
       propertyPath: m_RootOrder
       value: 4

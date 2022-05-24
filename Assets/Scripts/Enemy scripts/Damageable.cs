@@ -27,12 +27,12 @@ public class Damageable : MonoBehaviour
         if(health <= 0)
         {
             Die();
+            Instantiate(DeathEffect, transform.position, Quaternion.identity);
         }
     }
     void Die()
     {
         //print("oof");
-        Instantiate(DeathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
   
     }
