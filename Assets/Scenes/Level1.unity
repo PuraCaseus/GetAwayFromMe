@@ -614,7 +614,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182309596}
   m_LocalRotation: {x: 0.18096565, y: 0.13842763, z: -0.7733783, w: 0.59158707}
-  m_LocalPosition: {x: 0.32910013, y: -2.7216, z: 22.781435}
+  m_LocalPosition: {x: 0.32910013, y: -2.7216, z: 23.24}
   m_LocalScale: {x: 3.3185794, y: 11.903699, z: 1}
   m_Children: []
   m_Father: {fileID: 1811015852}
@@ -11448,6 +11448,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: Currency 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6427012840687434060, guid: 9915682de3133ce459c8684129500d1c, type: 3}
+      propertyPath: ForceModule.y.scalar
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427012840687434060, guid: 9915682de3133ce459c8684129500d1c, type: 3}
+      propertyPath: NoiseModule.frequency
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427012840687434060, guid: 9915682de3133ce459c8684129500d1c, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: -0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427012840687434060, guid: 9915682de3133ce459c8684129500d1c, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427012840687434060, guid: 9915682de3133ce459c8684129500d1c, type: 3}
+      propertyPath: NoiseModule.strength.scalar
+      value: 0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427012840687434060, guid: 9915682de3133ce459c8684129500d1c, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427012840687434060, guid: 9915682de3133ce459c8684129500d1c, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427012840687434060, guid: 9915682de3133ce459c8684129500d1c, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427012840687434060, guid: 9915682de3133ce459c8684129500d1c, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427012840687434060, guid: 9915682de3133ce459c8684129500d1c, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.2256141
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427012840687434060, guid: 9915682de3133ce459c8684129500d1c, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.4779312
+      objectReference: {fileID: 0}
     - target: {fileID: 6888486513550516981, guid: 9915682de3133ce459c8684129500d1c, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -16024,6 +16068,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThePlayer 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4618414094466664793, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4618414094466664794, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
+      propertyPath: HurtEffect
+      value: 
+      objectReference: {fileID: 7759804547435455416, guid: c958dd1c32a389341b490488c8dcdce6, type: 3}
     - target: {fileID: 4618414094466664795, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
       propertyPath: m_RootOrder
       value: 18
