@@ -132,9 +132,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0f2f47351b766f44ae2c4bec4ef3f01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 9
+  speed: 11
   target: {fileID: 0}
-  minimumDistance: 2.2
+  minimumDistance: 2.3
   aggroRange: 13
   anim: {fileID: 3682980047694011348}
 --- !u!114 &3682980047694011344

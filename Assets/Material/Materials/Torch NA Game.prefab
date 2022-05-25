@@ -112,19 +112,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1348003245884407856, guid: ecbfbc0522c1a00478d467438c000bdd, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 199
+      value: 268
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348003245884407856, guid: ecbfbc0522c1a00478d467438c000bdd, type: 3}
+      propertyPath: NoiseModule.strength.scalar
+      value: 0.34
       objectReference: {fileID: 0}
     - target: {fileID: 1348003245884407856, guid: ecbfbc0522c1a00478d467438c000bdd, type: 3}
       propertyPath: LightsModule.rangeCurve.scalar
-      value: 1.87
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348003245884407856, guid: ecbfbc0522c1a00478d467438c000bdd, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1348003245884407856, guid: ecbfbc0522c1a00478d467438c000bdd, type: 3}
       propertyPath: LightsModule.randomDistribution
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1348003245884407856, guid: ecbfbc0522c1a00478d467438c000bdd, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 58.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348003245884407856, guid: ecbfbc0522c1a00478d467438c000bdd, type: 3}
       propertyPath: LightsModule.intensityCurve.scalar
-      value: 1.92
+      value: 0.57
       objectReference: {fileID: 0}
     - target: {fileID: 1502602037246770023, guid: ecbfbc0522c1a00478d467438c000bdd, type: 3}
       propertyPath: m_RootOrder

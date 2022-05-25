@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c1851187708ec14b844f0a4e8b9654e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worth: 30
+  worth: 50
   pickupEffect: {fileID: 4821824524690989033, guid: edb461c2dfa88484e83eaed42c75e7e8, type: 3}
 --- !u!114 &1642094435401973768
 MonoBehaviour:
