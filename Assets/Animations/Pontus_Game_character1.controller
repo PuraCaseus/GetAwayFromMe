@@ -302,7 +302,7 @@ AnimatorStateMachine:
     m_Position: {x: 610, y: -750, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -361699129810210674}
-    m_Position: {x: 900, y: -270, z: 0}
+    m_Position: {x: 880, y: -280, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -7721265959989360745}
@@ -332,9 +332,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.006104961
+  m_TransitionDuration: 0.0017904043
   m_TransitionOffset: 0
-  m_ExitTime: 0.97071826
+  m_ExitTime: 1.0035914
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -498,7 +498,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Spin2WinAnim
-  m_Speed: 2
+  m_Speed: 1.57
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 4411576035775103451}
@@ -753,9 +753,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.009967893
-  m_TransitionOffset: 0
-  m_ExitTime: 0.97071826
+  m_TransitionDuration: 0.0013387799
+  m_TransitionOffset: 0.001617953
+  m_ExitTime: 1.0035914
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -775,9 +775,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.0006211996
+  m_TransitionDuration: 0.002175063
   m_TransitionOffset: 0
-  m_ExitTime: 0.98509306
+  m_ExitTime: 0.99800825
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 1
