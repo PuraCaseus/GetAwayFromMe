@@ -15,10 +15,13 @@ public class ZonerAI : MonoBehaviour
 
     public float aggroRange;
 
-    
+    Vector2 targetPosition;
+
+
     void Update()
     {
-          float DistToTarget = Vector2.Distance(transform.position, target.position);
+      targetPosition = FindObjectOfType<PlayerDamaged>().transform.position;
+      float DistToTarget = Vector2.Distance(transform.position, target.position);
       if(DistToTarget < aggroRange)
       {
         ShotCooldown();
