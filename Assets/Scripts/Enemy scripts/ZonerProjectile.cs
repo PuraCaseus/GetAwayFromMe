@@ -14,11 +14,6 @@ public class ZonerProjectile : MonoBehaviour
     public float kickRange = 0.5f;
     public GameObject BloodExplotion;
 
-    private void Start()
-    {
-
-        targetPosition = FindObjectOfType<PlayerDamaged>().transform.position;
-    }
 
     private void Update()
     {

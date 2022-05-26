@@ -9,6 +9,7 @@ public class Damageable : MonoBehaviour
     int health;
     public GameObject DeathEffect;
     public GameObject HurtEffect;
+    public GameObject Spawn;
     public Animator anim;
 
     public HealthBarBehavior Healthbar;
@@ -28,6 +29,7 @@ public class Damageable : MonoBehaviour
         {
             Die();
             Instantiate(DeathEffect, transform.position, Quaternion.identity);
+            Spawn.SetActive(true);
         }
     }
     void Die()
