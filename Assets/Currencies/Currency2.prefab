@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 198964398820749449}
   - component: {fileID: 100359425590896458}
   - component: {fileID: 9088527359346293331}
-  - component: {fileID: 1642094435401973768}
   - component: {fileID: 7948304167727365731}
   m_Layer: 0
   m_Name: Currency2
@@ -98,22 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   worth: 50
   pickupEffect: {fileID: 4821824524690989033, guid: edb461c2dfa88484e83eaed42c75e7e8, type: 3}
---- !u!114 &1642094435401973768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3288708911296293711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc9f3bc06af54214498ee8d16fdbbbcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 14
-  target: {fileID: 4618414094466664795, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
-  aggroRange: 5
-  anim: {fileID: 7948304167727365731}
 --- !u!95 &7948304167727365731
 Animator:
   serializedVersion: 3
