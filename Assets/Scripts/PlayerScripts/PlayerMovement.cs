@@ -42,7 +42,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-
     }
 
 
@@ -57,8 +56,9 @@ public class PlayerMovement : MonoBehaviour
         else if (movement.x < 0)
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
-        }
+        }        
+
     }
 
 
-    }
+}
