@@ -18,28 +18,29 @@ public class PotThrow : MonoBehaviour
  
     private void Update()
     {
- 
         Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);
         
-        if (Ammo.GetComponent<AmmoScript>().ammo > 0)
-          if (Input.GetKeyDown(KeyCode.V))
-          { 
+        if(Time.time >= nextShotTime)
+        {
+          if (Ammo.GetComponent<AmmoScript>().ammo > 0)
+           if (Input.GetKeyDown(KeyCode.V))
+           { 
             Yeet();
             nextShotTime = Time.time + 1f / shootRate;
             AmmoScript.instance.UseAmmo(1);
-          }
-        
+           }
+        }
  
     }
 
-        void Yeet(){
+    void Yeet(){
 
-        if(Ammo.GetComponent<AmmoScript>().ammo >= 1)
-        {
-            Instantiate(kruka, shootPoint.position, transform.rotation);
-        }
+     if(Ammo.GetComponent<AmmoScript>().ammo >= 1)
+     {
+      Instantiate(kruka, shootPoint.position, transform.rotation);
+     }
 
     }
 
