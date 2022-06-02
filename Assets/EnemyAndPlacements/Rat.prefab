@@ -603,6 +603,7 @@ MonoBehaviour:
   maxHealth: 70
   DeathEffect: {fileID: 3660721893738942768, guid: dd944d3959fa848439a3a8819fa851ef, type: 3}
   HurtEffect: {fileID: 7914132598952281018, guid: 4d71c92a8049f1944934876dd407e623, type: 3}
+  Spawn: {fileID: 4767854433009604282, guid: 10f41cc459439b2469baf5cc14f2b679, type: 3}
   anim: {fileID: 4891017390536604478}
   Healthbar: {fileID: 4891017389887274307}
 --- !u!95 &4891017390536604478
