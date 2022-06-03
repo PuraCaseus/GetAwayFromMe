@@ -24,11 +24,11 @@ public class BigBoiAI : MonoBehaviour
       {
         ChaseTarget();
         anim.SetBool("isRunning", true);
-        anim.SetTrigger("isAttacking");
+        
       }
-      else
+      if(Vector2.Distance(transform.position, target.position) < minimumDistance)
       {
-        StopChasingTarget();
+        anim.SetTrigger("isAttacking");
       }
 
     }
