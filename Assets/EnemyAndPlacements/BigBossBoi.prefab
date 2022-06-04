@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 11
   target: {fileID: 0}
-  minimumDistance: 2.3
+  minimumDistance: 12
   aggroRange: 13
   anim: {fileID: 3682980047694011348}
 --- !u!114 &3682980047694011344
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cee41d6ac92c84468c2dccdd5527481, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 450
+  maxHealth: 400
   DeathEffect: {fileID: 3288708911296293711, guid: 70d32aa3b9479e94490b569b518fe14d, type: 3}
   HurtEffect: {fileID: 7914132598952281018, guid: 4d71c92a8049f1944934876dd407e623, type: 3}
   Spawn: {fileID: 4767854433009604282, guid: 10f41cc459439b2469baf5cc14f2b679, type: 3}
@@ -171,8 +171,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   kickPoint: {fileID: 3682980049526689445}
-  kickRange: 4
-  attackDamage: 100
+  kickRange: 1.89
+  attackDamage: 70
   kickRate: 3
   AttackSound: {fileID: 3682980048410170091}
 --- !u!50 &3682980047694011350
@@ -324,7 +324,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05857387, y: 0.17389157}
+  m_Offset: {x: -0.04925093, y: 0.1808838}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -335,7 +335,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.17996392, y: 0.72543436}
+  m_Size: {x: 0.21725526, y: 0.7953555}
   m_EdgeRadius: 0
 --- !u!1 &3682980047773019606
 GameObject:

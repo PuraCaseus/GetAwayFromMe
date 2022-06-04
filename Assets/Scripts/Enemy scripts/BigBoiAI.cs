@@ -26,7 +26,7 @@ public class BigBoiAI : MonoBehaviour
         anim.SetBool("isRunning", true);
         
       }
-      if(Vector2.Distance(transform.position, target.position) < minimumDistance)
+      if(Vector3.Distance(transform.position, target.position) < minimumDistance)
       {
         anim.SetTrigger("isAttacking");
       }

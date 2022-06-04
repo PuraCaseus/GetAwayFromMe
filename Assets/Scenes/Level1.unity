@@ -28289,7 +28289,7 @@ PrefabInstance:
       objectReference: {fileID: 5063724632112983858}
     - target: {fileID: 7276850344367183427, guid: 335cba5662eeec74db738455e8d1213f, type: 3}
       propertyPath: minimumDistance
-      value: 2.1
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 335cba5662eeec74db738455e8d1213f, type: 3}
@@ -46143,6 +46143,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1887492610, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
+      propertyPath: m_Color.a
+      value: 0.30588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887492610, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887492610, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.75294125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887492610, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 211463598990542403, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -46151,9 +46167,25 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3326447772901715206, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7769961
+      objectReference: {fileID: 0}
+    - target: {fileID: 3326447772901715206, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3326447772901715207, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4618414094376992247, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4618414094444084548, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
+      propertyPath: m_Volume
+      value: 0.252
       objectReference: {fileID: 0}
     - target: {fileID: 4618414094466664789, guid: f1e4cb9e04f696e47b3a8957421a407e, type: 3}
       propertyPath: m_Name
