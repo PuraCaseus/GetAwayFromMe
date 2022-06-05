@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -784.5, y: 279.8001}
+  m_AnchoredPosition: {x: -827.5, y: 327.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2569487877538458682
@@ -290,8 +290,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 179.39996, y: 1.7749987}
-  m_SizeDelta: {x: -178.00005, y: 13.050003}
+  m_AnchoredPosition: {x: 190.29997, y: 1.7749987}
+  m_SizeDelta: {x: -199.80006, y: 13.050003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7987881173846218864
 CanvasRenderer:
@@ -370,7 +370,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 96, y: 242}
+  m_AnchoredPosition: {x: 92.13, y: 151}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7987881174697765231
@@ -394,14 +394,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.64677304, g: 0.3972499, b: 0.745283, a: 0.392}
+  m_Color: {r: 0.7917107, g: 0.2584905, b: 1, a: 0.8235294}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 179b522f8ac597842a3fb878612c9b17, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b623e31a4e969bc43aac587e48ebc1fe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
